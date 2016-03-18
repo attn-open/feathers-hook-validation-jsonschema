@@ -8,5 +8,6 @@ npm-debug.log
 # Environment variables
 .env
 
-# Compiled code
-lib
+# Source code
+src
+test
