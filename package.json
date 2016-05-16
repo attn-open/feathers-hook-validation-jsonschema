@@ -18,11 +18,11 @@
     ]
   },
   "scripts": {
-    "compile": "rimraf lib/ && babel --out-dir lib/ src/",
-    "lint": "standard --verbose | snazzy",
+    "compile:js": "rimraf lib/ && babel --out-dir lib/ src/",
+    "lint:js": "standard --verbose | snazzy",
     "preinstall": "npm prune",
-    "prepublish": "npm run compile",
-    "pretest": "npm run lint && npm run compile && nsp check",
+    "prepublish": "npm run compile:js",
+    "pretest": "npm run lint:js && npm run compile:js && nsp check",
     "publish": "git push attn && git push attn --tags",
     "release:major": "npm version major && npm publish",
     "release:minor": "npm version minor && npm publish",
