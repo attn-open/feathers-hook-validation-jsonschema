@@ -1,7 +1,7 @@
 {
   "name": "feathers-hook-validation-jsonschema",
-  "description": "Feathers validation layer using JSON Schema.",
-  "version": "0.1.0",
+  "description": "Validate Feathers resources using JSON Schema.",
+  "version": "1.0.0",
   "license": "ISC",
   "keywords": [
     "feathers",
@@ -64,7 +64,7 @@
   },
   "author": {
     "name": "Joshua Jabbour",
-    "email": "code@joshuajabbour.com"
+    "email": "jjabbour@attn.com"
   },
   "contributors": []
 }
