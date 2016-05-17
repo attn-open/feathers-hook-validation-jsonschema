@@ -34,7 +34,8 @@
   "dependencies": {
     "ajv": "^4.0.5",
     "feathers-commons": "^0.7.3",
-    "feathers-errors": "^2.1.0"
+    "feathers-errors": "^2.1.0",
+    "node-fetch": "^1.5.2"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",
