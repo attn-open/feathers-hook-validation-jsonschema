@@ -4,15 +4,12 @@
 
 ## Use
 
-Add the hook into a [Feathers](http://docs.feathersjs.com/hooks/readme.html) flow. Initialize it with either a [JSON Schema](http://json-schema.org) object, or the URL to a schema object.
+Add the hook into a [Feathers](http://docs.feathersjs.com/hooks/readme.html) flow. Initialize it with either a [JSON Schema](http://json-schema.org) object, or the URL to a schema object. [AJV options](https://github.com/epoberezkin/ajv#options) may be passed as a second parameter during initialization.
 
 ```js
   'use strict'
 
   import { compileSchema as validator, compileSchemaFromUrl as validatorFromUrl } from 'feathers-hook-validation-jsonschema'
-  import feathers from 'feathers'
-
-  const app = feathers()
 
   // Initialize a validator with a schema URL.
   const validate = validator({
@@ -51,3 +48,7 @@ Add the hook into a [Feathers](http://docs.feathersjs.com/hooks/readme.html) flo
     update: [ validateFromUrl ]
   })
 ```
+
+## Development
+
+This module currently uses the [AJV validation library](https://github.com/epoberezkin/ajv) for the actual validation.
